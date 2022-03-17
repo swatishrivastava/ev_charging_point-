@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/listOfChangingPointFragment2">
+
+    <fragment
+        android:id="@+id/listOfChangingPointFragment2"
+        android:name="com.android.evchargingpoints.ui.ListOfChangingPointFragment"
+        android:label="list_of_changing_point_fragment"
+        tools:layout="@layout/list_of_changing_point_fragment" >
+        <action
+            android:id="@+id/action_listOfChangingPointFragment2_to_detailChargingPointFragment3"
+            app:destination="@id/detailChargingPointFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailChargingPointFragment3"
+        android:name="com.android.evchargingpoints.ui.DetailChargingPointFragment"
+        android:label="detail_charging_point_fragment"
+        tools:layout="@layout/detail_charging_point_fragment" />
+</navigation>

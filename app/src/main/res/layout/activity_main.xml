@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/charging_activity"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ChargingPointActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/chargingPointContainer"
+        android:name="com.android.evchargingpoints.ui.ListOfChangingPointFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.fragment.app.FragmentContainerView>
+</androidx.constraintlayout.widget.ConstraintLayout>
