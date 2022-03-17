@@ -1,7 +1,7 @@
 package com.android.evchargingpoints.di
 
-import com.android.evchargingpoints.data.ChargingPointAPI
-import com.android.evchargingpoints.data.ChargingPointRepo
+import com.android.evchargingpoints.data.api.ChargingPointAPI
+import com.android.evchargingpoints.data.repo.ChargingPointRepo
 import com.android.evchargingpoints.domain.IRepository
 import dagger.Module
 import dagger.Provides

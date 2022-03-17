@@ -6,14 +6,14 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.android.evchargingpoints.data.state.NetworkResult
 import com.android.evchargingpoints.domain.ChargingPoint
-import com.android.evchargingpoints.domain.GetChargingPointList
+import com.android.evchargingpoints.domain.GetChargingPointListUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
 class ListOfChangingPointViewModel
-@Inject constructor(private val listOfChargingPoints: GetChargingPointList) :
+@Inject constructor(private val listOfChargingPointsUseCase: GetChargingPointListUseCase) :
     ViewModel() {
 
     private var mutableLiveDataForChargingPoint = MutableLiveData<List<ChargingPoint>>()
@@ -27,8 +27,8 @@ class ListOfChangingPointViewModel
 
     fun getNearestChargingPoints(long:String, lat:String) {
         viewModelScope.launch {
-            listOfChargingPoints.setLatAndLong(long, lat)
-            handleChargingPointResponse(listOfChargingPoints())
+            listOfChargingPointsUseCase.setLatAndLong(long, lat)
+            handleChargingPointResponse(listOfChargingPointsUseCase())
         }
 
     }

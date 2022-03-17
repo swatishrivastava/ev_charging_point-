@@ -1,6 +1,7 @@
-package com.android.evchargingpoints.data
+package com.android.evchargingpoints.data.repo
 
 import com.android.evchargingpoints.BuildConfig
+import com.android.evchargingpoints.data.api.ChargingPointAPI
 import com.android.evchargingpoints.data.response.ChargingPointResponseItem
 import com.android.evchargingpoints.domain.IRepository
 import javax.inject.Inject

@@ -2,4 +2,5 @@
     <string name="app_name">EVChargingPoints</string>
     <string name="permission_rationale">Location permission needed for core functionality</string>
     <string name="ok">OK</string>
+    <string name="error_message">Not able to connect with server.Please try later</string>
 </resources>

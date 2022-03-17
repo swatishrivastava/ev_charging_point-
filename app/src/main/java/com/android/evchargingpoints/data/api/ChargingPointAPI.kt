@@ -1,4 +1,4 @@
-package com.android.evchargingpoints.data
+package com.android.evchargingpoints.data.api
 
 import com.android.evchargingpoints.data.response.ChargingPointResponseItem
 import retrofit2.http.GET

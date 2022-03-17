@@ -1,7 +1,7 @@
 package com.android.evchargingpoints.di
 
 import com.android.evchargingpoints.BuildConfig
-import com.android.evchargingpoints.data.ChargingPointAPI
+import com.android.evchargingpoints.data.api.ChargingPointAPI
 import com.squareup.moshi.Moshi
 import dagger.Module
 import dagger.Provides
